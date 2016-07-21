@@ -1,5 +1,6 @@
 PROJECT := caffe
 CXXFLAGS += -Wno-unused-local-typedefs
+CXXFLAGS += -fPIC
 CONFIG_FILE := Makefile.config
 # Explicitly check for the config file, otherwise make -k will proceed anyway.
 ifeq ($(wildcard $(CONFIG_FILE)),)
@@ -39,7 +40,7 @@ DYNAMIC_NAME_SHORT := lib$(LIBRARY_NAME).so
 #DYNAMIC_SONAME_SHORT := $(DYNAMIC_NAME_SHORT).$(DYNAMIC_VERSION_MAJOR)
 DYNAMIC_VERSIONED_NAME_SHORT := $(DYNAMIC_NAME_SHORT).$(DYNAMIC_VERSION_MAJOR).$(DYNAMIC_VERSION_MINOR).$(DYNAMIC_VERSION_REVISION)
 DYNAMIC_NAME := $(LIB_BUILD_DIR)/$(DYNAMIC_VERSIONED_NAME_SHORT)
-COMMON_FLAGS += -DCAFFE_VERSION=$(DYNAMIC_VERSION_MAJOR).$(DYNAMIC_VERSION_MINOR).$(DYNAMIC_VERSION_REVISION)
+COMMON_FLAGS += -fPIC -DCAFFE_VERSION=$(DYNAMIC_VERSION_MAJOR).$(DYNAMIC_VERSION_MINOR).$(DYNAMIC_VERSION_REVISION)
 
 ##############################
 # Get all source files
@@ -266,6 +267,7 @@ ifeq ($(LINUX), 1)
 	# We will also explicitly add stdc++ to the link target.
 	LIBRARIES += boost_thread stdc++
 	VERSIONFLAGS += -Wl,-soname,$(DYNAMIC_VERSIONED_NAME_SHORT) -Wl,-rpath,$(ORIGIN)/../lib
+
 endif
 
 # OS X:
@@ -332,7 +334,7 @@ endif
 
 # Generic flags
 CXX_HARDENING_FLAGS += -fPIC -fno-operator-names -Wformat -Wformat-security -Wall
-LINKER_EXEC_HARDENING_FLAGS += -pie
+LINKER_EXEC_HARDENING_FLAGS += -pie -fPIC
 
 # Release-only flag
 ifneq ($(DEBUG), 1)
@@ -649,12 +651,12 @@ $(ALL_BUILD_DIRS): | $(BUILD_DIR_LINK)
 	@ mkdir -p $@
 
 $(DYNAMIC_NAME): $(OBJS) | $(LIB_BUILD_DIR)
-	@ echo LD -o $@
+	@ echo LD -fPIC -o $@
 	$(Q)$(CXX) -shared -o $@ $(OBJS) $(VERSIONFLAGS) $(LINKFLAGS) $(CXX_HARDENING_FLAGS) $(LINKER_SHARED_HARDENING_FLAGS) $(LDFLAGS)
 	@ cd $(BUILD_DIR)/lib; rm -f $(DYNAMIC_NAME_SHORT);   ln -s $(DYNAMIC_VERSIONED_NAME_SHORT) $(DYNAMIC_NAME_SHORT)
 
 $(STATIC_NAME): $(OBJS) | $(LIB_BUILD_DIR)
-	@ echo AR -o $@
+	@ echo AR -fPIC -o $@
 	$(Q)ar rcs $@ $(OBJS)
 
 $(BUILD_DIR)/%.o: %.cpp | $(ALL_BUILD_DIRS)
@@ -686,15 +688,15 @@ $(TEST_ALL_BIN): $(TEST_MAIN_SRC) $(TEST_OBJS) $(GTEST_OBJS) \
 
 $(TEST_CU_BINS): $(TEST_BIN_DIR)/%.testbin: $(TEST_CU_BUILD_DIR)/%.o \
 	$(GTEST_OBJS) | $(DYNAMIC_NAME) $(TEST_BIN_DIR)
-	@ echo LD $<
+	@ echo LD -fPIC $<
 	$(Q)$(CXX) $(TEST_MAIN_SRC) $< $(GTEST_OBJS) \
 		-o $@ $(LINKFLAGS) $(CXX_HARDENING_FLAGS) $(LINKER_EXEC_HARDENING_FLAGS) $(LDFLAGS) -l$(LIBRARY_NAME) -Wl,-rpath,$(ORIGIN)/../lib
 
 $(TEST_CXX_BINS): $(TEST_BIN_DIR)/%.testbin: $(TEST_CXX_BUILD_DIR)/%.o \
 	$(GTEST_OBJS) | $(DYNAMIC_NAME) $(TEST_BIN_DIR)
-	@ echo LD $<
+	@ echo LD -fPIC $<
 	$(Q)$(CXX) $(TEST_MAIN_SRC) $< $(GTEST_OBJS) \
-		-o $@ $(LINKFLAGS) $(CXX_HARDENING_FLAGS) $(LINKER_EXEC_HARDENING_FLAGS) $(LDFLAGS) -l$(LIBRARY_NAME) -Wl,-rpath,$(ORIGIN)/../lib
+	  -o $@ $(LINKFLAGS) $(CXX_HARDENING_FLAGS) $(LINKER_EXEC_HARDENING_FLAGS) $(LDFLAGS) -l$(LIBRARY_NAME) -Wl,-rpath,$(ORIGIN)/../lib
 
 # Target for extension-less symlinks to tool binaries with extension '*.bin'.
 $(TOOL_BUILD_DIR)/%: $(TOOL_BUILD_DIR)/%.bin | $(TOOL_BUILD_DIR)

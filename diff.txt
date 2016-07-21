@@ -1,0 +1,175 @@
+Files ./cmake/Dependencies.cmake and ../../../py-faster-rcnn/caffe-fast-rcnn/cmake/Dependencies.cmake differ
+Files ./cmake/Misc.cmake and ../../../py-faster-rcnn/caffe-fast-rcnn/cmake/Misc.cmake differ
+Files ./cmake/Modules/FindMKL.cmake and ../../../py-faster-rcnn/caffe-fast-rcnn/cmake/Modules/FindMKL.cmake differ
+Only in ./cmake/Modules: FindMPI.cmake
+Files ./cmake/ProtoBuf.cmake and ../../../py-faster-rcnn/caffe-fast-rcnn/cmake/ProtoBuf.cmake differ
+Files ./cmake/Summary.cmake and ../../../py-faster-rcnn/caffe-fast-rcnn/cmake/Summary.cmake differ
+Files ./cmake/Targets.cmake and ../../../py-faster-rcnn/caffe-fast-rcnn/cmake/Targets.cmake differ
+Files ./CMakeLists.txt and ../../../py-faster-rcnn/caffe-fast-rcnn/CMakeLists.txt differ
+Files ./data/mnist/get_mnist.sh and ../../../py-faster-rcnn/caffe-fast-rcnn/data/mnist/get_mnist.sh differ
+Only in .: diff.txt
+Only in .: docker
+Files ./docs/installation.md and ../../../py-faster-rcnn/caffe-fast-rcnn/docs/installation.md differ
+Files ./docs/multigpu.md and ../../../py-faster-rcnn/caffe-fast-rcnn/docs/multigpu.md differ
+Files ./examples/00-classification.ipynb and ../../../py-faster-rcnn/caffe-fast-rcnn/examples/00-classification.ipynb differ
+Files ./examples/01-learning-lenet.ipynb and ../../../py-faster-rcnn/caffe-fast-rcnn/examples/01-learning-lenet.ipynb differ
+Only in ./examples: 02-fine-tuning.ipynb
+Only in ./examples: brewing-logreg.ipynb
+Files ./examples/cifar10/cifar10_full.prototxt and ../../../py-faster-rcnn/caffe-fast-rcnn/examples/cifar10/cifar10_full.prototxt differ
+Only in ./examples/cifar10: cifar10_full_solver_data_server.prototxt
+Only in ./examples/cifar10: cifar10_full_solver_sync_client.prototxt
+Only in ./examples/cifar10: cifar10_full_solver_sync_param_server.prototxt
+Only in ./examples/cifar10: cifar10_full_train_test_data_server.prototxt
+Only in ./examples/cifar10: cifar10_full_train_test_sync_client.prototxt
+Only in ./examples/cifar10: cifar10_full_train_test_sync_param_server.prototxt
+Files ./examples/cifar10/cifar10_quick.prototxt and ../../../py-faster-rcnn/caffe-fast-rcnn/examples/cifar10/cifar10_quick.prototxt differ
+Only in ./examples/cifar10: train_full_multinode_mpi.sh
+Only in ./examples/cifar10: train_full_multinode.sh
+Files ./examples/cpp_classification/classification.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/examples/cpp_classification/classification.cpp differ
+Files ./examples/mnist/lenet_auto_solver.prototxt and ../../../py-faster-rcnn/caffe-fast-rcnn/examples/mnist/lenet_auto_solver.prototxt differ
+Files ./examples/mnist/lenet.prototxt and ../../../py-faster-rcnn/caffe-fast-rcnn/examples/mnist/lenet.prototxt differ
+Only in ./examples/mnist: train_lenet_docker.sh
+Files ./examples/net_surgery/bvlc_caffenet_full_conv.prototxt and ../../../py-faster-rcnn/caffe-fast-rcnn/examples/net_surgery/bvlc_caffenet_full_conv.prototxt differ
+Files ./examples/net_surgery/conv.prototxt and ../../../py-faster-rcnn/caffe-fast-rcnn/examples/net_surgery/conv.prototxt differ
+Files ./examples/net_surgery.ipynb and ../../../py-faster-rcnn/caffe-fast-rcnn/examples/net_surgery.ipynb differ
+Files ./examples/siamese/mnist_siamese.prototxt and ../../../py-faster-rcnn/caffe-fast-rcnn/examples/siamese/mnist_siamese.prototxt differ
+File ./.git is a directory while file ../../../py-faster-rcnn/caffe-fast-rcnn/.git is a regular file
+Files ./.gitignore and ../../../py-faster-rcnn/caffe-fast-rcnn/.gitignore differ
+Files ./include/caffe/blob.hpp and ../../../py-faster-rcnn/caffe-fast-rcnn/include/caffe/blob.hpp differ
+Files ./include/caffe/data_reader.hpp and ../../../py-faster-rcnn/caffe-fast-rcnn/include/caffe/data_reader.hpp differ
+Files ./include/caffe/data_transformer.hpp and ../../../py-faster-rcnn/caffe-fast-rcnn/include/caffe/data_transformer.hpp differ
+Only in ./include/caffe: internode
+Files ./include/caffe/layer.hpp and ../../../py-faster-rcnn/caffe-fast-rcnn/include/caffe/layer.hpp differ
+Files ./include/caffe/layers/base_conv_layer.hpp and ../../../py-faster-rcnn/caffe-fast-rcnn/include/caffe/layers/base_conv_layer.hpp differ
+Files ./include/caffe/layers/base_data_layer.hpp and ../../../py-faster-rcnn/caffe-fast-rcnn/include/caffe/layers/base_data_layer.hpp differ
+Files ./include/caffe/layers/batch_norm_layer.hpp and ../../../py-faster-rcnn/caffe-fast-rcnn/include/caffe/layers/batch_norm_layer.hpp differ
+Files ./include/caffe/layers/data_layer.hpp and ../../../py-faster-rcnn/caffe-fast-rcnn/include/caffe/layers/data_layer.hpp differ
+Files ./include/caffe/layers/dropout_layer.hpp and ../../../py-faster-rcnn/caffe-fast-rcnn/include/caffe/layers/dropout_layer.hpp differ
+Files ./include/caffe/layers/inner_product_layer.hpp and ../../../py-faster-rcnn/caffe-fast-rcnn/include/caffe/layers/inner_product_layer.hpp differ
+Only in ./include/caffe/layers: input_layer.hpp
+Files ./include/caffe/layers/lrn_layer.hpp and ../../../py-faster-rcnn/caffe-fast-rcnn/include/caffe/layers/lrn_layer.hpp differ
+Only in ./include/caffe/layers: mkl_layers.hpp
+Files ./include/caffe/layers/pooling_layer.hpp and ../../../py-faster-rcnn/caffe-fast-rcnn/include/caffe/layers/pooling_layer.hpp differ
+Only in ./include/caffe/layers: pooling_layer_impl.hpp
+Files ./include/caffe/layers/python_layer.hpp and ../../../py-faster-rcnn/caffe-fast-rcnn/include/caffe/layers/python_layer.hpp differ
+Only in ./include/caffe/layers: remote_data_layer.hpp
+Files ./include/caffe/layers/softmax_layer.hpp and ../../../py-faster-rcnn/caffe-fast-rcnn/include/caffe/layers/softmax_layer.hpp differ
+Only in ./include/caffe: multinode
+Only in ./include/caffe: MultiSolver.hpp
+Files ./include/caffe/net.hpp and ../../../py-faster-rcnn/caffe-fast-rcnn/include/caffe/net.hpp differ
+Only in ./include/caffe: serialization
+Files ./include/caffe/sgd_solvers.hpp and ../../../py-faster-rcnn/caffe-fast-rcnn/include/caffe/sgd_solvers.hpp differ
+Files ./include/caffe/solver.hpp and ../../../py-faster-rcnn/caffe-fast-rcnn/include/caffe/solver.hpp differ
+Files ./include/caffe/syncedmem.hpp and ../../../py-faster-rcnn/caffe-fast-rcnn/include/caffe/syncedmem.hpp differ
+Files ./include/caffe/util/blocking_queue.hpp and ../../../py-faster-rcnn/caffe-fast-rcnn/include/caffe/util/blocking_queue.hpp differ
+Only in ./include/caffe/util: cpu_info.hpp
+Files ./include/caffe/util/io.hpp and ../../../py-faster-rcnn/caffe-fast-rcnn/include/caffe/util/io.hpp differ
+Files ./include/caffe/util/math_functions.hpp and ../../../py-faster-rcnn/caffe-fast-rcnn/include/caffe/util/math_functions.hpp differ
+Files ./include/caffe/util/mkl_alternate.hpp and ../../../py-faster-rcnn/caffe-fast-rcnn/include/caffe/util/mkl_alternate.hpp differ
+Files ./include/caffe/util/upgrade_proto.hpp and ../../../py-faster-rcnn/caffe-fast-rcnn/include/caffe/util/upgrade_proto.hpp differ
+Only in ./include: mkl_dnn_cppwrapper.h
+Files ./LICENSE and ../../../py-faster-rcnn/caffe-fast-rcnn/LICENSE differ
+Files ./Makefile and ../../../py-faster-rcnn/caffe-fast-rcnn/Makefile differ
+Only in .: Makefile.config
+Files ./Makefile.config.example and ../../../py-faster-rcnn/caffe-fast-rcnn/Makefile.config.example differ
+Files ./models/bvlc_alexnet/deploy.prototxt and ../../../py-faster-rcnn/caffe-fast-rcnn/models/bvlc_alexnet/deploy.prototxt differ
+Only in ./models/bvlc_alexnet: solver_client.prototxt
+Only in ./models/bvlc_alexnet: solver_param_server.prototxt
+Only in ./models/bvlc_alexnet: train_val_client.prototxt
+Only in ./models/bvlc_alexnet: train_val_param_server.prototxt
+Files ./models/bvlc_googlenet/deploy.prototxt and ../../../py-faster-rcnn/caffe-fast-rcnn/models/bvlc_googlenet/deploy.prototxt differ
+Only in ./models/bvlc_googlenet: solver_client.prototxt
+Only in ./models/bvlc_googlenet: solver_param_server.prototxt
+Only in ./models/bvlc_googlenet: train_val_client.prototxt
+Only in ./models/bvlc_googlenet: train_val_param_server.prototxt
+Files ./models/bvlc_reference_caffenet/deploy.prototxt and ../../../py-faster-rcnn/caffe-fast-rcnn/models/bvlc_reference_caffenet/deploy.prototxt differ
+Files ./models/bvlc_reference_rcnn_ilsvrc13/deploy.prototxt and ../../../py-faster-rcnn/caffe-fast-rcnn/models/bvlc_reference_rcnn_ilsvrc13/deploy.prototxt differ
+Files ./models/finetune_flickr_style/deploy.prototxt and ../../../py-faster-rcnn/caffe-fast-rcnn/models/finetune_flickr_style/deploy.prototxt differ
+Only in ./models: mkl2017_alexnet
+Files ./python/caffe/_caffe.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/python/caffe/_caffe.cpp differ
+Files ./python/caffe/__init__.py and ../../../py-faster-rcnn/caffe-fast-rcnn/python/caffe/__init__.py differ
+Files ./python/caffe/net_spec.py and ../../../py-faster-rcnn/caffe-fast-rcnn/python/caffe/net_spec.py differ
+Files ./python/caffe/pycaffe.py and ../../../py-faster-rcnn/caffe-fast-rcnn/python/caffe/pycaffe.py differ
+Files ./README.md and ../../../py-faster-rcnn/caffe-fast-rcnn/README.md differ
+Files ./src/caffe/blob.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/blob.cpp differ
+Files ./src/caffe/common.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/common.cpp differ
+Files ./src/caffe/data_transformer.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/data_transformer.cpp differ
+Files ./src/caffe/internal_thread.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/internal_thread.cpp differ
+Only in ./src/caffe: internode
+Files ./src/caffe/layer_factory.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/layer_factory.cpp differ
+Files ./src/caffe/layers/base_conv_layer.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/layers/base_conv_layer.cpp differ
+Files ./src/caffe/layers/base_data_layer.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/layers/base_data_layer.cpp differ
+Files ./src/caffe/layers/batch_norm_layer.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/layers/batch_norm_layer.cpp differ
+Files ./src/caffe/layers/concat_layer.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/layers/concat_layer.cpp differ
+Files ./src/caffe/layers/conv_layer.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/layers/conv_layer.cpp differ
+Files ./src/caffe/layers/data_layer.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/layers/data_layer.cpp differ
+Files ./src/caffe/layers/deconv_layer.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/layers/deconv_layer.cpp differ
+Files ./src/caffe/layers/dropout_layer.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/layers/dropout_layer.cpp differ
+Files ./src/caffe/layers/dropout_layer.cu and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/layers/dropout_layer.cu differ
+Files ./src/caffe/layers/eltwise_layer.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/layers/eltwise_layer.cpp differ
+Files ./src/caffe/layers/elu_layer.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/layers/elu_layer.cpp differ
+Files ./src/caffe/layers/inner_product_layer.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/layers/inner_product_layer.cpp differ
+Files ./src/caffe/layers/inner_product_layer.cu and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/layers/inner_product_layer.cu differ
+Only in ./src/caffe/layers: input_layer.cpp
+Files ./src/caffe/layers/lrn_layer.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/layers/lrn_layer.cpp differ
+Only in ./src/caffe/layers: mkl_batch_norm_layer.cpp
+Only in ./src/caffe/layers: mkl_concat_layer.cpp
+Only in ./src/caffe/layers: mkl_convolution_layer.cpp
+Only in ./src/caffe/layers: mkl_eltwise_layer.cpp
+Only in ./src/caffe/layers: mkl_lrn_layer.cpp
+Only in ./src/caffe/layers: mkl_pooling_layer.cpp
+Only in ./src/caffe/layers: mkl_relu_layer.cpp
+Only in ./src/caffe/layers: mkl_split_layer.cpp
+Files ./src/caffe/layers/pooling_layer.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/layers/pooling_layer.cpp differ
+Only in ./src/caffe/layers: pooling_layer_impl.cpp
+Files ./src/caffe/layers/relu_layer.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/layers/relu_layer.cpp differ
+Only in ./src/caffe/layers: remote_data_layer.cpp
+Files ./src/caffe/layers/sigmoid_layer.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/layers/sigmoid_layer.cpp differ
+Files ./src/caffe/layers/softmax_layer.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/layers/softmax_layer.cpp differ
+Files ./src/caffe/layers/split_layer.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/layers/split_layer.cpp differ
+Only in ./src/caffe: multinode
+Only in ./src/caffe: MultiSolver.cpp
+Files ./src/caffe/net.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/net.cpp differ
+Files ./src/caffe/proto/caffe.proto and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/proto/caffe.proto differ
+Only in ./src/caffe: serialization
+Files ./src/caffe/solver.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/solver.cpp differ
+Files ./src/caffe/solvers/sgd_solver.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/solvers/sgd_solver.cpp differ
+Files ./src/caffe/syncedmem.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/syncedmem.cpp differ
+Files ./src/caffe/test/CMakeLists.txt and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/test/CMakeLists.txt differ
+Files ./src/caffe/test/test_caffe_main.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/test/test_caffe_main.cpp differ
+Files ./src/caffe/test/test_data_transformer.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/test/test_data_transformer.cpp differ
+Files ./src/caffe/test/test_gradient_based_solver.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/test/test_gradient_based_solver.cpp differ
+Files ./src/caffe/test/test_inner_product_layer.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/test/test_inner_product_layer.cpp differ
+Only in ./src/caffe/test: test_mkl_batch_norm_layer.cpp
+Only in ./src/caffe/test: test_mkl_concat_layer.cpp
+Only in ./src/caffe/test: test_mkl_convolution_layer.cpp
+Only in ./src/caffe/test: test_mkl_eltwise_layer.cpp
+Only in ./src/caffe/test: test_mkl_lrn_layer.cpp
+Only in ./src/caffe/test: test_mkl_neuron_layers.cpp
+Only in ./src/caffe/test: test_mkl_pooling_layer.cpp
+Only in ./src/caffe/test: test_mkl_split_layer.cpp
+Only in ./src/caffe/test: test_multinode.cpp
+Only in ./src/caffe/test: test_multinode_sync_blob_info.cpp
+Files ./src/caffe/test/test_net.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/test/test_net.cpp differ
+Only in ./src/caffe/test: test_serialization_blob_codec.cpp
+Files ./src/caffe/test/test_split_layer.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/test/test_split_layer.cpp differ
+Files ./src/caffe/util/blocking_queue.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/util/blocking_queue.cpp differ
+Only in ./src/caffe/util: cpu_info.cpp
+Files ./src/caffe/util/insert_splits.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/util/insert_splits.cpp differ
+Files ./src/caffe/util/io.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/util/io.cpp differ
+Files ./src/caffe/util/math_functions.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/util/math_functions.cpp differ
+Files ./src/caffe/util/math_functions.cu and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/util/math_functions.cu differ
+Files ./src/caffe/util/upgrade_proto.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/src/caffe/util/upgrade_proto.cpp differ
+Only in ./src: gmock
+Only in ./src/gtest: CHANGES
+Only in ./src/gtest: cmake
+Files ./src/gtest/CMakeLists.txt and ../../../py-faster-rcnn/caffe-fast-rcnn/src/gtest/CMakeLists.txt differ
+Only in ./src/gtest: CONTRIBUTORS
+Only in ./src/gtest: include
+Only in ./src/gtest: LICENSE
+Only in ./src/gtest: README
+Only in ./src/gtest: src
+Files ./tools/caffe.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/tools/caffe.cpp differ
+Files ./tools/extract_features.cpp and ../../../py-faster-rcnn/caffe-fast-rcnn/tools/extract_features.cpp differ
+Only in .: trail.txt
+Only in .: xbyak

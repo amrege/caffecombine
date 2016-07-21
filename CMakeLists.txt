@@ -8,7 +8,6 @@ endif()
 
 # ---[ Caffe project
 project(Caffe C CXX)
-
 # ---[ Caffe version
 set(CAFFE_TARGET_VERSION "1.0.0-rc3")
 set(CAFFE_TARGET_SOVERSION "1.0.0-rc3")
