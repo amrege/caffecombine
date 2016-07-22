@@ -5,10 +5,10 @@
 # USE_CUDNN := 1
 
 # CPU-only switch (uncomment to build without GPU support).
-# CPU_ONLY := 1
+CPU_ONLY := 1
 
 # Uncomment to use optimized MKL2017 primitives by default for supported layers
-# USE_MKL2017_AS_DEFAULT_ENGINE := 1
+USE_MKL2017_AS_DEFAULT_ENGINE := 1
 
 # uncomment to disable IO dependencies and corresponding data layers
 # USE_OPENCV := 0
@@ -28,7 +28,7 @@
 # CUSTOM_CXX := g++
 
 # CUDA directory contains bin/ and lib/ directories that we need.
-CUDA_DIR := /usr/local/cuda
+#CUDA_DIR := /usr/local/cuda
 # On Ubuntu 14.04, if cuda tools are installed via
 # "sudo apt-get install nvidia-cuda-toolkit" then use this instead:
 # CUDA_DIR := /usr
@@ -46,12 +46,15 @@ CUDA_ARCH := -gencode arch=compute_20,code=sm_20 \
 # atlas for ATLAS (default)
 # mkl for MKL
 # open for OpenBlas
-BLAS := atlas
+BLAS := mkl
 # Custom (MKL/ATLAS/OpenBLAS) include and lib directories.
 # Leave commented to accept the defaults for your choice of BLAS
 # (which should work)!
 # BLAS_INCLUDE := /path/to/your/blas
 # BLAS_LIB := /path/to/your/blas
+BLAS_DIR := $(MKLROOT)/include 
+BLAS_LIB := $(MKLROOT)/lib/intel64 
+
 
 # Homebrew puts openblas in a directory that is not on the standard search path
 # BLAS_INCLUDE := $(shell brew --prefix openblas)/include
@@ -87,7 +90,7 @@ PYTHON_LIB := /usr/lib
 # PYTHON_LIB += $(shell brew --prefix numpy)/lib
 
 # Uncomment to support layers written in Python (will link against Python libs)
-# WITH_PYTHON_LAYER := 1
+WITH_PYTHON_LAYER := 1
 
 # Whatever else you find you need goes here.
 INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include
